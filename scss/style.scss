@@ -1,0 +1,25 @@
+@import './partials/variables';
+@import './partials/reset';
+@import './partials/mixins';
+@import './partials/body';
+@import './partials/header';
+
+
+
+.articles{
+    width: 100%;
+    background-color: $white-color;
+
+    &__article{
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+       
+        p{
+            width: 100%;
+            @include font(18px, 300, $align:justify);
+            text-transform: none;
+            
+        }
+    }
+}
