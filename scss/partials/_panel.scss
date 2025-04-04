@@ -1,0 +1,30 @@
+.panel{
+    position: absolute;
+    width: $aside-width;
+    height: 100%;
+    background-color: $bg-color-sidebar;
+    top: 0;
+    left: $sidebar-width;
+    z-index: 50;
+
+    &__button{
+        @include border-sidebar(bottom, 1px, #161616);
+        @include font(32px, 700, #d8d8d8);
+        width: 100%;
+        height: 113px;
+        cursor: pointer;
+        background-color: $bg-color-sidebar;
+        transition: all 300ms ease;
+
+        &:hover{
+            color: $white-color;
+        }
+
+        & > .bx{
+            display: block;
+            line-height: 113px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
