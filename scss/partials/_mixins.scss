@@ -20,3 +20,22 @@
     border-left: $width-line solid $color-line;
     padding: $padding-line $padding-line $padding-line 3*$padding-line;
 }
+
+@mixin button{
+    @include font(14px, 300, $white-color, center);
+    display: block;
+    margin: 10px auto;
+    background-color: $primary-color;
+    line-height: 40px;
+    width: 200px;
+    min-height: 40px;
+    border-radius: 3px;
+    border: 1px solid darken($primary-color, 20%);
+    opacity: 1;
+    transition: all 300ms ease;
+    text-transform: none;
+
+        &:hover{
+            background-color: lighten($primary-color, 7%);
+        }
+}

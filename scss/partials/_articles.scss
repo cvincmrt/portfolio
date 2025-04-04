@@ -1,0 +1,45 @@
+.articles{
+    width: 100%;
+    padding: 50px 0 25px;
+    background-color: $white-color;
+
+    &__article{
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+    }    
+    
+    &__paragraf{
+        width: 100%;
+        @include font(18px, 300, #333, justify);
+        text-transform: none;
+
+        & > a, strong{
+            color: $primary-color;
+            font-weight: 600;
+        }
+
+        & > a{
+            @include anchor;
+             
+            &:hover{
+                border-bottom: 1px solid $primary-color;
+             }
+        }
+    }
+
+    &__quote{
+        @include quote();
+
+        &--active{
+            @include quote(4px, $color-line:$primary-color);
+        }
+
+    }
+    
+    &__button{
+        @include button;
+    }
+
+    
+}

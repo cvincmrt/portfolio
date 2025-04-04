@@ -10,5 +10,6 @@
 
     &__subtitle{
         @include font(25px, 300, $align:center);
+        text-shadow: 1px 1px 3px $white-color;
     }
 }
