@@ -39,3 +39,7 @@
             background-color: lighten($primary-color, 7%);
         }
 }
+
+@mixin border-sidebar($border-side: left, $border-width:1px, $border-color:$primary-color){
+    border-#{$border-side}: $border-width solid $border-color;
+}

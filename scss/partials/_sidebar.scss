@@ -1,0 +1,28 @@
+.sidebar{
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $bg-color-sidebar;
+    @include border-sidebar(right, 1px, #161616);
+
+    &__header{
+        width: 100%;
+        @include border-sidebar(bottom, 1px, #161616);
+        padding: 10px;
+
+        & > .logo{
+            display: block;
+            margin: 0 auto 10px;
+            width: 55px;
+            height: 55px;
+        }
+
+        & > h1{
+            @include font(18px, 600, #d8d8d8);
+        }
+    }
+
+    
+}
