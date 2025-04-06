@@ -4,8 +4,12 @@
     height: 100%;
     background-color: $bg-color-sidebar;
     top: 0;
-    left: $sidebar-width;
+    left: 0;
     z-index: 50;
+    
+    &.active{
+        left: $sidebar-width;
+    }
 
     &__button{
         @include border-sidebar(bottom, 1px, #161616);

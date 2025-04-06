@@ -1,4 +1,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: $bg-color-body;
+    position: relative;
 }
+main{
+    margin-left: 0;
+    &.active{
+        margin-left: $sidebar-width;
+    }     
+ }
