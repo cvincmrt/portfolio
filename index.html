@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Michal David</title>
 
-    <!-- BOXICONS <i class='bx bx-chevron-right'></i>-->
+    <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./css/style.min.css">
@@ -14,11 +14,18 @@
 <body>
     <aside class="panel">
         <div class="panel__button">
-            <i class='bx bx-chevron-left'></i> 
+            <i class='bx bx-chevron-left active'></i>
+            <i class='bx bx-chevron-right'></i> 
         </div>
         
-        
+        <ul class="panel__slider">
+            <li class="panel__item"><a  class="panel__link active" href="#"><span class="panel__circle"></span></a></li>
+            <li class="panel__item"><a class="panel__link" href="#"><span class="panel__circle"></span></a></li>
+            <li class="panel__item"><a class="panel__link" href="#"><span class="panel__circle"></span></a></li>
+            <li class="panel__item"><a class="panel__link" href="#"><span class="panel__circle"></span></a></li>
+        </ul>
     </aside>
+
     <div class="sidebar">
         <header class="sidebar__header">
             <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
@@ -47,6 +54,15 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="sidebar__social-icons">
+            <ul>
+                <li><a href="#">c</a></li>
+                <li><a href="#">c</a></li>
+                <li><a href="#">v</a></li>
+                <li><a href="#">v</a></li>
+            </ul>
+        </div>
     </div>
 
     <main>

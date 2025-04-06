@@ -53,4 +53,34 @@
         }
     }
 
+    &__social-icons{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 200;
+        width: $sidebar-width + $aside-width;
+        border: 1px solid red;
+        @include border-sidebar(top, 1px, #161616);
+
+        & ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            & li{
+                background-color: green;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+
+                & a{
+                    display: block;
+                    
+                }
+            }
+        }
+
+    }
+
 }
