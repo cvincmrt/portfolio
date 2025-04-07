@@ -5,6 +5,7 @@ body{
 }
 main{
     margin-left: 0;
+    transition: all 400ms ease;
     &.active{
         margin-left: $sidebar-width;
     }     

@@ -1,11 +1,12 @@
 .panel{
-    position: absolute;
+    position: fixed;
     width: $aside-width;
     height: 100%;
     background-color: $bg-color-sidebar;
     top: 0;
     left: 0;
     z-index: 50;
+    transition: all 400ms ease;
     
     &.active{
         left: $sidebar-width;
@@ -22,6 +23,7 @@
 
         &:hover{
             color: $white-color;
+            background-color: $primary-color;
         }
 
         & > .bx{
